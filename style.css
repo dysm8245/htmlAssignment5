@@ -1,0 +1,38 @@
+*{
+    /* border: 1px solid red; */
+    font-family: 'Times New Roman', Times, serif;
+}
+footer {
+  z-index: 1;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: auto;  
+}
+.background{
+  z-index: -1;
+  width: 100%;
+  min-height: 100vh;
+  position: fixed;
+}
+.card-img-top{
+  height: 400px;
+}
+.card-service{
+  background-color: rgba(0,0,0,.5);
+}
+.bg-trans{
+  background-color: rgba(0,0,0,.8);
+}
+.info{
+  font-size: 25px;
+}
+.mx-auto{
+  width: 600px;
+}
+.message{
+  height: 700px;
+}
+.imgCar{
+  height: 600px;
+}

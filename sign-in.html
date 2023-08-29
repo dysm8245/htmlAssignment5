@@ -3,13 +3,91 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bootstrap Site</title>
+  <title>Sign-In</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>Hello-Bootstrap</h1>
+
+  <!-- background -->
+  <section>
+    <div>
+      <img src="img/risen-wang-20jX9b35r_M-unsplash.jpg" class="background" alt="black and white photo of gym">
+    </div>
+  </section>
+
+  <!-- navbar -->
+  <div>
+    <nav class="navbar navbar-expand-lg bg-dark">
+      <a class="navbar-brand text-light ml-5" href="#">Pumped Iron</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="dark-blue-text"><i
+          class="fas fa-bars fa-1x icons"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto order-0">
+          <li class="nav-item">
+            <a href="landing.html" class="nav-link text-light pr-5">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link text-light pr-5">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="sign-in.html" class="nav-link text-light pr-5">Sign-In</a>
+          </li>
+          <li class="nav-item">
+            <a href="sign-out.html" class="nav-link text-light pr-5">Sign-Out</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <!-- sign-in form -->
+  <section>
+    <div class="container d-flex justify-content-center align-items-center mt-5 mb-5">
+      <div class="col-lg-3 mt-5 mb-5 p-3 border rounded bg-light">
+        <div class=" text-center pb-3">
+          <h1>Sign-In</h1>
+        </div>
+        <form action="">
+          <div class="form-group">
+            <label for="exampleInputEmail1" class="mb-3">Email address</label>
+            <input type="email" class="form-control mb-3" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1" class="mb-3">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          </div>
+          <div class="text-center mb-3">
+            <button type="button" class="btn btn-primary mt-5">Sign-In</button>
+          </div>
+          <div>
+            <a href="#" class="mr-5">Create Account</a>
+            <a href="#" class="ml-4">Forgot Password</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer class="bg-dark text-center align-items-center text-light mt-5">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-4">
+          <p>&copy;Pumped Iron</p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4">
+          <p style="bottom: 0;">Denver, CO</p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4">
+          <p>Established 2022</p>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
